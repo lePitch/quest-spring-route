@@ -23,6 +23,7 @@ public class DoctorController {
             throw new ResponseStatusException(HttpStatus.SEE_OTHER, "One of us is still here, you will find. Good luck ;)");
         else
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "" +
+                    "Cannot find incarnation number " + number + ". " +
                     "Please, wait for me. I'm coming, but you need to live a long life and be patient to see me :)");
     }
 
